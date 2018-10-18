@@ -1,0 +1,63 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.5.1
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/BlockLength:
+  Max: 40
+  Exclude:
+    - spec/**/*
+
+Metrics/ClassLength:
+  Max: 160
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/ModuleLength:
+  Exclude:
+    - spec/**/*
+
+Style/FormatStringToken:
+  Exclude:
+    - Rakefile
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/**/*
+
+Style/AlignHash:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
+RSpec/FilePath:
+  Exclude:
+    - spec/**/*
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/MessageExpectation:
+  Enabled: false

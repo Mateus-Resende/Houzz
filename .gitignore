@@ -2,7 +2,7 @@ pkg/
 doc/
 coverage/
 .bundle
-Gemfile.lock
 .rvmrc
 *.sw*
 *.orig
+spec/examples.txt
